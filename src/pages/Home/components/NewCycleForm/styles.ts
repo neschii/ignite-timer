@@ -13,7 +13,11 @@ export const FormContainer = styled.div`
 `
 
 const BaseInput = styled.input`
+<<<<<<< HEAD
   background: transparent;
+=======
+  background-color: transparent;
+>>>>>>> ignite-timer
   height: 2.5rem;
   border: 0;
   border-bottom: 2px solid ${(props) => props.theme['gray-500']};
@@ -21,10 +25,18 @@ const BaseInput = styled.input`
   font-size: 1.125rem;
   padding: 0 0.5rem;
   color: ${(props) => props.theme['gray-100']};
+<<<<<<< HEAD
+=======
+
+>>>>>>> ignite-timer
   &:focus {
     box-shadow: none;
     border-color: ${(props) => props.theme['green-500']};
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ignite-timer
   &::placeholder {
     color: ${(props) => props.theme['gray-500']};
   }
@@ -36,7 +48,10 @@ export const TaskInput = styled(BaseInput)`
     display: none !important;
   }
 `
+<<<<<<< HEAD
 
+=======
+>>>>>>> ignite-timer
 export const MinutesAmountInput = styled(BaseInput)`
   width: 4rem;
 `

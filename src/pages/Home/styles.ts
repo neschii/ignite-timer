@@ -41,16 +41,30 @@ export const BaseCountdownButton = styled.button`
 `
 export const StartCountdownButton = styled(BaseCountdownButton)`
   background: ${(props) => props.theme['green-500']};
+<<<<<<< HEAD
   
  
  &:not(:disabled):hover {
     background: ${(props) => props.theme['green-700']};
+=======
+
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme['green-700']};
+  }
+>>>>>>> ignite-timer
 `
 
 export const StopCountdownButton = styled(BaseCountdownButton)`
   background: ${(props) => props.theme['red-500']};
+<<<<<<< HEAD
   
  
  &:not(:disabled):hover {
     background: ${(props) => props.theme['red-700']};
+=======
+
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme['red-700']};
+  }
+>>>>>>> ignite-timer
 `

@@ -64,7 +64,11 @@ const STATUS_COLORS = {
   yellow: 'yellow-500',
   green: 'green-500',
   red: 'red-500',
+<<<<<<< HEAD
 } as const 
+=======
+} as const
+>>>>>>> ignite-timer
 
 interface StatusProps {
   statusColor: keyof typeof STATUS_COLORS

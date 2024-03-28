@@ -21,11 +21,20 @@ export function Countdown() {
       interval = setInterval(() => {
         const secondsDifference = differenceInSeconds(
           new Date(),
+<<<<<<< HEAD
           activeCycle.startDate,
         )
 
         if (secondsDifference > totalSeconds) {
           markCurrentCycleAsFinished()
+=======
+          new Date(activeCycle.startDate),
+        )
+
+        if (secondsDifference >= totalSeconds) {
+          markCurrentCycleAsFinished()
+
+>>>>>>> ignite-timer
           setSecondsPassed(totalSeconds)
           clearInterval(interval)
         } else {
@@ -33,6 +42,10 @@ export function Countdown() {
         }
       }, 1000)
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ignite-timer
     return () => {
       clearInterval(interval)
     }
@@ -67,4 +80,8 @@ export function Countdown() {
       <span>{seconds[1]}</span>
     </CountdownContainer>
   )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ignite-timer

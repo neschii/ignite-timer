@@ -4,6 +4,10 @@ import { HandPalm, Play } from 'phosphor-react'
 import { FormProvider, useForm } from 'react-hook-form'
 import * as zod from 'zod'
 import { useContext } from 'react'
+<<<<<<< HEAD
+=======
+
+>>>>>>> ignite-timer
 import {
   HomeContainer,
   StartCountdownButton,
@@ -18,8 +22,13 @@ const newCycleFormValidationSchema = zod.object({
   task: zod.string().min(1, 'Informe a tarefa'),
   minutesAmount: zod
     .number()
+<<<<<<< HEAD
     .min(5, 'mínimo de 5 minutos')
     .max(60, 'máximo de 60 minutos'),
+=======
+    .min(5, 'O ciclo precisa ser de no mínimo 5 minutos.')
+    .max(60, 'O ciclo precisa ser de no máximo 60 minutos.'),
+>>>>>>> ignite-timer
 })
 
 type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
@@ -36,18 +45,34 @@ export function Home() {
     },
   })
 
+<<<<<<< HEAD
   const { handleSubmit, watch, /*reset*/ } = newCycleForm
+=======
+  const { handleSubmit, watch, reset } = newCycleForm
+
+  function handleCreateNewCycle(data: NewCycleFormData) {
+    createNewCycle(data)
+    reset()
+  }
+>>>>>>> ignite-timer
 
   const task = watch('task')
   const isSubmitDisable = !task
 
   return (
     <HomeContainer>
+<<<<<<< HEAD
       <form onSubmit={handleSubmit(createNewCycle)} action="">
         <FormProvider {...newCycleForm}>
           <NewCycleForm />
         </FormProvider>
 
+=======
+      <form onSubmit={handleSubmit(handleCreateNewCycle)}>
+        <FormProvider {...newCycleForm}>
+          <NewCycleForm />
+        </FormProvider>
+>>>>>>> ignite-timer
         <Countdown />
 
         {activeCycle ? (

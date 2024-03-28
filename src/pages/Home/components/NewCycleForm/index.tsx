@@ -9,20 +9,34 @@ export function NewCycleForm() {
 
   return (
     <FormContainer>
+<<<<<<< HEAD
       <label htmlFor="task">Vou trabalhar em</label>
       <TaskInput
         id="task"
         list="task-suggestions"
         placeholder="Dê um nome para o seu projeto"
+=======
+      <label htmlFor="task"> Vou trabalhar em</label>
+      <TaskInput
+        id="task"
+        list="task-suggestions"
+        placeholder="nome do projeto"
+>>>>>>> ignite-timer
         disabled={!!activeCycle}
         {...register('task')}
       />
 
       <datalist id="task-suggestions">
+<<<<<<< HEAD
         <option value="Projeto 1" />
         <option value="Projeto 2" />
         <option value="Projeto 3" />
         <option value="Banana" />
+=======
+        <option value="Projeto 1 " />
+        <option value="Projeto 2 " />
+        <option value="Projeto 3 " />
+>>>>>>> ignite-timer
       </datalist>
 
       <label htmlFor="minutesAmount">durante</label>
@@ -31,7 +45,11 @@ export function NewCycleForm() {
         id="minutesAmount"
         placeholder="00"
         step={5}
+<<<<<<< HEAD
         min={5}
+=======
+        min={0}
+>>>>>>> ignite-timer
         max={60}
         disabled={!!activeCycle}
         {...register('minutesAmount', { valueAsNumber: true })}
@@ -40,4 +58,8 @@ export function NewCycleForm() {
       <span>minutos.</span>
     </FormContainer>
   )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ignite-timer
